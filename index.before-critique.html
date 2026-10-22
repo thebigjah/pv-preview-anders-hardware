@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Anders Hardware | Northport, Alabama</title>
+<meta name="description" content="Family-owned hardware store on Main Avenue in Northport, Alabama since 1909.">
+<style>
+:root{
+  --cream:#f6efe0;
+  --paper:#fffaf0;
+  --ink:#2a2118;
+  --green:#1f4034;
+  --green-dark:#162e25;
+  --rust:#9c3d1a;
+  --brass:#d9b25f;
+  --line:#d8cdb5;
+  --serif:Georgia,"Times New Roman",serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.6}
+a{color:var(--rust)}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 1.25rem}
+
+.preview{background:#111;color:#fff;font-size:.875rem;line-height:1.4;text-align:center;padding:.6rem 1rem;font-weight:600}
+
+header.top{background:var(--paper);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:.9rem;padding-bottom:.9rem}
+.brand{font-family:var(--serif);font-weight:700;font-size:1.25rem;color:var(--green);text-decoration:none;letter-spacing:.01em}
+.brand small{display:block;font-family:var(--sans);font-weight:500;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rust)}
+.top-phone{font-weight:700;text-decoration:none;color:var(--green);white-space:nowrap}
+.top-phone span{display:none}
+
+.hero{background:var(--green);color:var(--cream);position:relative;overflow:hidden}
+.hero .wrap{padding-top:3rem;padding-bottom:3.5rem;position:relative;z-index:1}
+.eyebrow{font-size:.8125rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);font-weight:700;margin:0 0 .75rem}
+h1,h2,h3{font-family:var(--serif);line-height:1.15;margin:0}
+h1{font-size:2.5rem;max-width:14ch}
+.hero p.lead{font-size:1.1875rem;max-width:34rem;margin:1.1rem 0 1.75rem}
+.cta{display:flex;flex-direction:column;gap:.75rem}
+.btn{display:inline-block;text-align:center;text-decoration:none;font-weight:700;padding:.95rem 1.5rem;border-radius:4px;border:2px solid transparent;font-size:1.0625rem}
+.btn-primary{background:var(--brass);color:#22190d}
+.btn-primary:hover{background:#e6c37a}
+.btn-ghost{border-color:var(--cream);color:var(--cream)}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.hero-year{position:absolute;right:-1rem;bottom:-1.5rem;font-family:var(--serif);font-weight:700;font-size:9rem;line-height:1;color:rgba(255,255,255,.07);user-select:none}
+.hero-badge{display:none}
+
+section{padding:3.5rem 0}
+h2{font-size:1.875rem;color:var(--green);margin-bottom:.6rem}
+.sub{max-width:36rem;margin:0 0 2rem}
+
+.story{background:var(--paper);border-bottom:1px solid var(--line)}
+.story-grid{display:grid;gap:2rem}
+.story p{margin:0 0 1rem;max-width:38rem}
+.timeline{display:flex;gap:1rem;align-items:stretch}
+.stat{flex:1;border-top:4px solid var(--rust);background:var(--cream);padding:1rem 1rem 1.1rem}
+.stat b{display:block;font-family:var(--serif);font-size:2.25rem;line-height:1;color:var(--green)}
+.stat span{font-size:.9375rem}
+
+.offers{list-style:none;margin:0;padding:0;display:grid;gap:1rem}
+.offers li{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:1.25rem 1.25rem 1.35rem;position:relative}
+.offers li::before{content:"";display:block;width:2.25rem;height:.35rem;background:var(--rust);border-radius:2px;margin-bottom:.9rem}
+.offers h3{font-size:1.25rem;color:var(--green);margin-bottom:.35rem}
+.offers p{margin:0}
+
+.feature{background:var(--green-dark);color:var(--cream)}
+.feature h2{color:var(--cream)}
+.feature-grid{display:grid;gap:2rem;align-items:center}
+.feature p{max-width:36rem;margin:0 0 1rem}
+.bins{display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem;max-width:22rem}
+.bin{aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#e9cf93,#b38a3a 60%,#7a5a1e);border:3px solid #3b2d12;position:relative}
+.bin::after{content:"";position:absolute;left:50%;top:50%;width:26%;height:26%;transform:translate(-50%,-50%);border-radius:50%;background:#3b2d12}
+
+.visit .cards{display:grid;gap:1rem}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:1.5rem}
+.card h3{font-size:1.125rem;color:var(--rust);margin-bottom:.5rem;letter-spacing:.02em}
+.card p{margin:0}
+.card .big{font-family:var(--serif);font-size:1.5rem;color:var(--green);line-height:1.3}
+.card a.big{text-decoration:none}
+.card a.big:hover{text-decoration:underline}
+.email{word-break:break-word}
+
+footer{background:var(--green);color:var(--cream);padding:2rem 0;font-size:.9375rem}
+footer .wrap{display:grid;gap:.5rem}
+footer a{color:var(--brass)}
+footer strong{font-family:var(--serif);font-size:1.125rem}
+
+@media (min-width:700px){
+  .cta{flex-direction:row}
+  .offers{grid-template-columns:repeat(2,1fr)}
+  .visit .cards{grid-template-columns:repeat(3,1fr)}
+  h1{font-size:3.25rem}
+  .top-phone span{display:inline}
+}
+@media (min-width:1000px){
+  .wrap{padding:0 2rem}
+  .hero .wrap{padding-top:6rem;padding-bottom:6.5rem}
+  h1{font-size:4.25rem}
+  .hero p.lead{font-size:1.3125rem}
+  .hero-year{font-size:22rem;right:2rem;bottom:-3rem}
+  .hero-badge{display:flex;position:absolute;right:max(2rem,calc(50% - 560px + 2rem));top:50%;transform:translateY(-50%);width:15rem;height:15rem;border-radius:50%;border:2px solid var(--brass);align-items:center;justify-content:center;flex-direction:column;text-align:center;color:var(--brass);z-index:1}
+  .hero-badge b{font-family:var(--serif);font-size:3.5rem;line-height:1;color:var(--cream)}
+  .hero-badge span{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700}
+  .hero-year{display:none}
+  section{padding:5rem 0}
+  h2{font-size:2.5rem}
+  .story-grid{grid-template-columns:1.3fr 1fr;gap:4rem;align-items:start}
+  .timeline{flex-direction:column}
+  .offers{grid-template-columns:repeat(3,1fr)}
+  .feature-grid{grid-template-columns:1.4fr 1fr;gap:4rem}
+  .bins{justify-self:end;max-width:26rem}
+  footer .wrap{grid-template-columns:1fr auto;align-items:center}
+}
+</style>
+</head>
+<body>
+
+<div class="preview">Concept preview made by Purcell Ventures for Anders Hardware. Not the official site.</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Anders Hardware<small>Northport, Alabama</small></a>
+    <a class="top-phone" href="tel:+12057520461"><span>Call </span>205-752-0461</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Family-owned since 1909</p>
+      <h1>Hardware on Main Avenue</h1>
+      <p class="lead">Tools, materials, seeds by the scoop, cast-iron cookware and classic toys. Come in for a single nut or bolt, or order from a catalog of more than 70,000 products.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="tel:+12057520461">Call 205-752-0461</a>
+        <a class="btn btn-ghost" href="#visit">Visit 419 Main Avenue</a>
+      </div>
+    </div>
+    <div class="hero-badge" aria-hidden="true"><span>Since</span><b>1909</b><span>Northport</span></div>
+    <div class="hero-year" aria-hidden="true">1909</div>
+  </div>
+
+  <section class="story" aria-labelledby="story-h">
+    <div class="wrap story-grid">
+      <div>
+        <h2 id="story-h">Five generations on one street</h2>
+        <p>In 1909, J.H. Anders opened a mercantile store on Main Avenue in Northport. The family still runs it today, now in its fifth generation and at the same address.</p>
+        <p>It is a place where you can ask a question, pick up what you need and leave with it the same day.</p>
+      </div>
+      <div class="timeline" aria-label="Quick facts">
+        <div class="stat"><b>1909</b><span>J.H. Anders opens a mercantile store</span></div>
+        <div class="stat"><b>5th</b><span>generation of the family at the counter</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="offer-h">
+    <div class="wrap">
+      <h2 id="offer-h">What you will find</h2>
+      <p class="sub">A working hardware store with a few old-fashioned extras.</p>
+      <ul class="offers">
+        <li><h3>Hardware and tools</h3><p>The everyday items for repairs, projects and jobs around the house.</p></li>
+        <li><h3>Materials</h3><p>Supplies for building and fixing things.</p></li>
+        <li><h3>Seeds by the scoop</h3><p>Buy the amount you need.</p></li>
+        <li><h3>Cast-iron cookware</h3><p>Skillets and pots for the kitchen.</p></li>
+        <li><h3>Classic toys</h3><p>Old favorites for kids and grown-ups.</p></li>
+        <li><h3>Custom orders</h3><p>Choose from an online catalog of more than 70,000 products.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="feature" aria-labelledby="bins-h">
+    <div class="wrap feature-grid">
+      <div>
+        <h2 id="bins-h">Single nuts and bolts</h2>
+        <p>Need one bolt and not a whole box? The carousel bins are more than 100 years old, and they still hold the loose hardware.</p>
+        <p>Bring in the part you are matching and find the right one.</p>
+      </div>
+      <div class="bins" aria-hidden="true">
+        <div class="bin"></div><div class="bin"></div><div class="bin"></div><div class="bin"></div>
+        <div class="bin"></div><div class="bin"></div><div class="bin"></div><div class="bin"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit" aria-labelledby="visit-h">
+    <div class="wrap">
+      <h2 id="visit-h">Visit or get in touch</h2>
+      <p class="sub">Call the store to ask about hours or to check on an item.</p>
+      <div class="cards">
+        <div class="card">
+          <h3>Address</h3>
+          <p class="big">419 Main Avenue<br>Northport, AL</p>
+        </div>
+        <div class="card">
+          <h3>Phone</h3>
+          <p><a class="big" href="tel:+12057520461">205-752-0461</a></p>
+        </div>
+        <div class="card">
+          <h3>Email</h3>
+          <p class="email"><a class="big" href="mailto:customerservice@andershardware.com">customerservice@andershardware.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <strong>Anders Hardware</strong><br>
+      419 Main Avenue, Northport, AL &middot; <a href="tel:+12057520461">205-752-0461</a>
+    </div>
+    <div>Family-owned since 1909</div>
+  </div>
+</footer>
+
+</body>
+</html>
